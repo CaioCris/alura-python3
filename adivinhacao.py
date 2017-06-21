@@ -1,6 +1,5 @@
 import random
 
-
 def jogar_adivinhacao():
     print('********************************')
     print('Bem vindo ao jogo de Adivinhação')
@@ -49,3 +48,6 @@ def jogar_adivinhacao():
 
     print('Fim do jogo')
     # print(numero_secreto)
+
+if __name__ == '__main__':
+    jogar_adivinhacao()

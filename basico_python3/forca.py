@@ -42,7 +42,7 @@ def mensagem_abertura():
     print('********************************')
 
 def definindo_palavra_secreta():
-    with open('palavras.txt', 'r') as arquivo:
+    with open('basico_python3/palavras.txt', 'r') as arquivo:
         palavras =[]
         for linha in arquivo:
             linha = linha.strip()

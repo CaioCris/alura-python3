@@ -5,7 +5,7 @@ def jogar_adivinhacao():
     print('Bem vindo ao jogo de Adivinhação')
     print('********************************')
 
-    numero_secreto = round(random.randrange(1,101)) #Numeros entre 1 e 100
+    numero_secreto = round(random.randrange(1, 101)) #Numeros entre 1 e 100
     pontos = 1000
 
     print('Qual o nível de dificuldade?')
@@ -48,6 +48,7 @@ def jogar_adivinhacao():
 
     print('Fim do jogo')
     # print(numero_secreto)
+
 
 if __name__ == '__main__':
     jogar_adivinhacao()

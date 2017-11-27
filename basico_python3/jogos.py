@@ -1,5 +1,6 @@
 import forca
-import adivinhacao
+
+from basico_python3 import adivinhacao
 
 print('********************************')
 print('Escolha algum dos jogos')

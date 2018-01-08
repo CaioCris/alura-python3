@@ -1,6 +1,6 @@
 class Conta:
     def __init__(self, numero, titular, saldo, limite=1000.0):
-        print(f'Contruindo objeto ... {self}')
+        #print(f'Contruindo objeto ... {self}')
         self.__numero = numero
         self.__titular = titular
         self.__saldo = saldo
@@ -12,24 +12,40 @@ class Conta:
     def deposita(self, valor):
         self.__saldo += valor
 
+    def __posso_sacar(self, valor_a_sacar):
+        valor_disponivel_a_sacar = self.__saldo + self.__limite
+        return valor_a_sacar <= valor_disponivel_a_sacar
+
     def sacar(self, valor):
-        self.__saldo -= valor
+        if self.__posso_sacar(valor):
+            self.__saldo -= valor
+        else:
+            print(f'O valor {valor} passou o limite!')
 
     def transfere(self, valor, destino):
         self.sacar(valor)
         destino.depositar(valor)
 
-    def get_numero(self):
+    @staticmethod
+    def codigo_banco():
+        return '001'
+
+    @property
+    def numero(self):
         return self.__numero
 
-    def get_titular(self):
+    @property
+    def titular(self):
         return self.__titular
 
-    def get_saldo(self):
+    @property
+    def saldo(self):
         return self.__saldo
 
-    def get_limites(self):
+    @property
+    def limites(self):
         return self.__limite
 
-    def set_limites(self, limite):
+    @limites.setter
+    def limites(self, limite):
         self.__limite = limite

@@ -1,6 +1,6 @@
 class Conta:
     def __init__(self, numero, titular, saldo, limite=1000.0):
-        #print(f'Contruindo objeto ... {self}')
+        print(f'Contruindo objeto ... {self}')
         self.__numero = numero
         self.__titular = titular
         self.__saldo = saldo

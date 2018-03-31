@@ -6,4 +6,3 @@ class Orcamento:
     @property
     def valor(self):
         return self.__valor
-

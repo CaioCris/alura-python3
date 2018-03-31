@@ -1,4 +1,4 @@
-from design_patterns_python3.impostos import ISS, ICMS
+from design_patterns_python3.strategy.impostos import ISS, ICMS
 
 
 class CalculadorDeImpostos:
@@ -9,7 +9,7 @@ class CalculadorDeImpostos:
 
 
 if __name__ == '__main__':
-    from design_patterns_python3.orcamento import Orcamento
+    from design_patterns_python3.chain_of_responsibility.orcamento import Orcamento
 
     calculador = CalculadorDeImpostos()
     orcamento = Orcamento(500)

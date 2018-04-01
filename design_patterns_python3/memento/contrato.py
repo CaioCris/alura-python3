@@ -51,6 +51,7 @@ class Contrato:
         self.__data = estado.contrato.data
         self.__tipo = estado.contrato.tipo
 
+
 class Estado:
     def __init__(self, contrato):
         self.__contrato = contrato
@@ -97,5 +98,3 @@ if __name__ == '__main__':
 
     print(contrato.tipo)
     print(contrato.cliente)
-
-

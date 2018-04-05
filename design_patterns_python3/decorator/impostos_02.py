@@ -7,8 +7,7 @@ def Imposto(calcula):
     return wrapper
 
 
-class TemplateImposto:
-    __metaclass__ = ABCMeta
+class TemplateImposto(metaclass=ABCMeta):
 
     @Imposto
     def calcula(self, orcamento):

@@ -1,8 +1,7 @@
 from abc import ABCMeta, abstractmethod
 
 
-class EstadoOrcamento:
-    __metaclass__ = ABCMeta
+class EstadoOrcamento(metaclass=ABCMeta):
 
     def __init__(self):
         self.desconto_aplicado =False

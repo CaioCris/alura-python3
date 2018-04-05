@@ -1,8 +1,7 @@
 from abc import ABCMeta, abstractmethod
 
 
-class TemplateImposto:
-    __metaclass__ = ABCMeta
+class TemplateImposto(metaclass=ABCMeta):
 
     def calcula(self, orcamento):
         if self.deve_taixar(orcamento):
